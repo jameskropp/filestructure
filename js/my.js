@@ -41,6 +41,7 @@ $(document).ready(function() {
 })
 
 function loadApp() {
+
     var CreatePath = React.createClass({
         render: function() {
             var paths = this.props.paths.map(function(obj, index) {
@@ -49,12 +50,25 @@ function loadApp() {
                 )
             })
             return (
-              <div>
-                <h1>Github Project File Structure</h1>
+              <div className="paths">
+                <h3>Shoption - Directory</h3>
+                <p> A "-" means one directory in.</p>
+                <hr />
                 {paths}
               </div> // Call the print function
             )
         }
+    })
+
+    var CreateSide = React.createClass({
+      render: function(){
+        return (
+          <div className="sidebar">
+            <h3>James Kropp</h3>
+            <h3>Github Project File Structure</h3>
+          </div>
+        )
+      }
     })
 
     var App = React.createClass({
@@ -65,7 +79,10 @@ function loadApp() {
         },
         render: function() {
             return (
-              <CreatePath paths = {this.state.paths} /> // Send the path array to my CreatePath function
+              <div className="content">
+                <CreateSide />
+                <CreatePath paths = {this.state.paths} />
+              </div>
             )
         }
     })

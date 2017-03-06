@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background-color: #222C3D;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 100%;
+  background-color: #15161C;
+  text-align: center;
+}
+
+.sidebar h3 {
+  padding: 0 0.5em;
+  color: #fff;
+}
+
+.paths {
+  padding-left: 12em;
+  color: #fff;
+}
