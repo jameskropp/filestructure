@@ -19,7 +19,7 @@ body {
   color: #fff;
 }
 
-.paths {
+.paths, .controls{
   padding-left: 12em;
   color: #fff;
 }
